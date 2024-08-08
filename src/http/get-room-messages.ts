@@ -3,7 +3,7 @@ interface GetRoomMessagesRequest {
 }
 
 export async function GetRoomMessages({ roomId }: GetRoomMessagesRequest) {
-  const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/rooms/${roomId}/messages`)
+  const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/rooms/${roomId}/messages`)
 
   const data: Array<{
     id: string
